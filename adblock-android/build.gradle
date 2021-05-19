@@ -65,36 +65,10 @@ android {
       }
     }
 
-    abi_x86 {
-      dimension = "abi"
-      ndk {
-        abiFilters "x86"
-      }
-
-      externalNativeBuild {
-        ndkBuild {
-          arguments "APP_ABI=x86"
-        }
-      }
-    }
-
-    abi_x86_64 {
-      dimension = "abi"
-      ndk {
-        abiFilters "x86_64"
-      }
-
-      externalNativeBuild {
-        ndkBuild {
-          arguments "APP_ABI=x86_64"
-        }
-      }
-    }
-
     abi_all {
       dimension = "abi"
       ndk {
-        abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        abiFilters 'arm64-v8a'
       }
     }
   }
@@ -106,7 +80,7 @@ android {
   } else {
     externalNativeBuild {
       ndkBuild {
-        path 'src/main/jni/Android.mk'
+        path "src/main/jni/Android.mk"
       }
     }
   }

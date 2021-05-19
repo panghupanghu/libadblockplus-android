@@ -1,9 +1,19 @@
 buildscript {
   repositories {
     google()
-    jcenter()
     mavenCentral()
-    maven { url 'https://jitpack.io' }
+    maven { url=uri ("https://jitpack.io") }
+    maven { url=uri ("https://maven.aliyun.com/repository/releases") }
+    maven { url 'https://artifact.bytedance.com/repository/AwemeOpenSDK' }
+    maven { url=uri ("https://maven.aliyun.com/repository/google") }
+    maven { url=uri ("https://maven.aliyun.com/repository/central") }
+    maven { url=uri ("https://maven.aliyun.com/repository/gradle-plugin") }
+    maven { url=uri ("https://maven.aliyun.com/repository/public") }
+    maven { url 'https://maven.aliyun.com/repository/public/'}
+    maven { url 'https://jitpack.io'}
+    maven { url 'https://developer.huawei.com/repo' }
+    maven { url 'https://developer.hihonor.com/repo' }
+    maven { url 'https://maven.google.com'}
   }
 
   dependencies {
@@ -28,9 +38,19 @@ def bintrayProjects = [ "adblock-android", "adblock-android-settings", "adblock-
 subprojects {
   repositories {
     google()
-    jcenter()
     mavenCentral()
-    maven { url 'https://jitpack.io' }
+    maven { url=uri ("https://jitpack.io") }
+    maven { url=uri ("https://maven.aliyun.com/repository/releases") }
+    maven { url 'https://artifact.bytedance.com/repository/AwemeOpenSDK' }
+    maven { url=uri ("https://maven.aliyun.com/repository/google") }
+    maven { url=uri ("https://maven.aliyun.com/repository/central") }
+    maven { url=uri ("https://maven.aliyun.com/repository/gradle-plugin") }
+    maven { url=uri ("https://maven.aliyun.com/repository/public") }
+    maven { url 'https://maven.aliyun.com/repository/public/'}
+    maven { url 'https://jitpack.io'}
+    maven { url 'https://developer.huawei.com/repo' }
+    maven { url 'https://developer.hihonor.com/repo' }
+    maven { url 'https://maven.google.com'}
   }
 
   // apply to all subprojects
@@ -90,7 +110,20 @@ subprojects {
 
     buildscript {
       repositories {
-        maven { url "https://plugins.gradle.org/m2/" }
+        google()
+        mavenCentral()
+        maven { url=uri ("https://jitpack.io") }
+        maven { url=uri ("https://maven.aliyun.com/repository/releases") }
+        maven { url 'https://artifact.bytedance.com/repository/AwemeOpenSDK' }
+        maven { url=uri ("https://maven.aliyun.com/repository/google") }
+        maven { url=uri ("https://maven.aliyun.com/repository/central") }
+        maven { url=uri ("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url=uri ("https://maven.aliyun.com/repository/public") }
+        maven { url 'https://maven.aliyun.com/repository/public/'}
+        maven { url 'https://jitpack.io'}
+        maven { url 'https://developer.huawei.com/repo' }
+        maven { url 'https://developer.hihonor.com/repo' }
+        maven { url 'https://maven.google.com'}
       }
 
       dependencies {
